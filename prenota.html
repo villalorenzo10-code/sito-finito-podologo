@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prenota una visita — Studio Cotrone</title>
+  <!-- Se il tuo sito usa già altri font, puoi togliere questa riga e cambiare --serif / --sans nel CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,520&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prenota.css">
+</head>
+<body>
+<main class="booking">
+
+  <header class="booking-head">
+    <a class="back" href="index.html">← Torna al sito</a>
+    <h1>Prenota una visita</h1>
+    <p>Scegli trattamento, podologo, giorno e orario. Vedrai solo le disponibilità libere.</p>
+  </header>
+
+  <div class="booking-layout">
+
+    <form id="bookingForm" class="steps" novalidate>
+
+      <section class="step" id="step-trattamento">
+        <h2><span class="num">1</span> Trattamento</h2>
+        <div class="option-grid" id="listaTrattamenti"></div>
+      </section>
+
+      <section class="step is-locked" id="step-podologo">
+        <h2><span class="num">2</span> Podologo</h2>
+        <div class="option-grid" id="listaPodologi"></div>
+      </section>
+
+      <section class="step is-locked" id="step-data">
+        <h2><span class="num">3</span> Giorno</h2>
+        <div class="cal-nav">
+          <button type="button" class="icon-btn" id="mesePrec" aria-label="Mese precedente">←</button>
+          <strong id="meseLabel"></strong>
+          <button type="button" class="icon-btn" id="meseSucc" aria-label="Mese successivo">→</button>
+        </div>
+        <div class="calendar" id="calendario"></div>
+        <p class="hint">Sono selezionabili solo i giorni con almeno un orario libero.</p>
+      </section>
+
+      <section class="step is-locked" id="step-ora">
+        <h2><span class="num">4</span> Orario</h2>
+        <div class="slots" id="listaOrari"></div>
+      </section>
+
+      <section class="step is-locked" id="step-conferma">
+        <h2><span class="num">5</span> I tuoi dati e il pagamento</h2>
+
+        <div class="fields">
+          <label>Nome e cognome
+            <input type="text" id="nome" required autocomplete="name">
+          </label>
+          <label>Telefono
+            <input type="tel" id="telefono" required autocomplete="tel">
+          </label>
+          <label class="full">Email
+            <input type="email" id="email" required autocomplete="email">
+          </label>
+          <label class="full">Note (facoltative)
+            <textarea id="note" rows="3"></textarea>
+          </label>
+        </div>
+
+        <h3 class="sub">Metodo di pagamento</h3>
+        <div class="pay-options">
+          <label class="pay">
+            <input type="radio" name="pagamento" value="studio" checked>
+            <span><strong>Contanti in studio</strong><small>Paghi direttamente al momento della visita</small></span>
+          </label>
+          <label class="pay">
+            <input type="radio" name="pagamento" value="carta">
+            <span><strong>Carta</strong><small>Pagamento con carta</small></span>
+          </label>
+        </div>
+      </section>
+    </form>
+
+    <aside class="summary" aria-live="polite">
+      <h2>Riepilogo</h2>
+      <dl id="riepilogo"></dl>
+      <div class="total"><span>Totale</span><strong id="totale">—</strong></div>
+      <button type="submit" form="bookingForm" class="btn" id="btnConferma" disabled>Conferma prenotazione</button>
+    </aside>
+
+  </div>
+
+  <section class="confirmation" id="conferma" hidden>
+    <div class="check">✓</div>
+    <h2>Prenotazione registrata</h2>
+    <p id="confermaTesto"></p>
+    <a class="btn" href="index.html">Torna al sito</a>
+  </section>
+
+</main>
+<script src="prenota.js"></script>
+</body>
+</html>

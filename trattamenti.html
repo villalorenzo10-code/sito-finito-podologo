@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trattamenti — Studio Podologico Dott. Adriano Cotrone, Roma</title>
+<meta name="description" content="Galleria fotografica dei trattamenti podologici dello studio del Dott. Adriano Cotrone, Viale Europa 98, Roma. Per informazioni e appuntamenti chiama lo studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,440;9..144,560;9..144,620&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="trattamenti.css">
+<noscript><style>.reveal{opacity:1;transform:none;}</style></noscript>
+</head>
+<body>
+
+<!-- ===== HEADER (identico a index.html; i link puntano alla home) ===== -->
+<header id="siteHeader">
+  <div class="wrap headerbar">
+    <a class="brand" href="index.html">
+      <img class="mark" src="/media/logo-cotrone.png" alt="Studio Podologico Cotrone" width="30" height="30">
+      <span class="name">Studio <em>Cotrone</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="index.html#chi-siamo">Lo studio</a>
+      <a href="trattamenti.html" aria-current="page">Trattamenti</a>
+      <a href="index.html#recensioni">Recensioni</a>
+      <a href="index.html#contatti">Contatti</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="tel:0689526512">06 8952 6512</a>
+      <a class="btn btn-primary" href="index.html#contatti">Prenota una visita</a>
+      <button class="hamburger" id="hamburger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html#chi-siamo">Lo studio</a>
+  <a href="trattamenti.html" aria-current="page">Trattamenti</a>
+  <a href="index.html#recensioni">Recensioni</a>
+  <a href="index.html#contatti">Contatti</a>
+  <a class="btn btn-primary" href="tel:0689526512">Chiama 06 8952 6512</a>
+</div>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="treatments-hero">
+    <div class="wrap">
+      <a class="treatments-hero__back" href="index.html">← Torna alla home</a>
+      <h1>I nostri trattamenti</h1>
+      <p class="lede">Uno sguardo allo studio e al lavoro quotidiano del Dott. Cotrone: ogni paziente è seguito con attenzione, nel rispetto dei tempi e del benessere del suo piede.</p>
+    </div>
+  </section>
+
+  <!-- ===== GALLERIA ===== -->
+  <section class="treatments-section" aria-labelledby="galleryTitle">
+    <div class="wrap">
+      <h2 id="galleryTitle" class="treatments-visually-hidden">Galleria dei trattamenti</h2>
+
+      <!--
+        COME AGGIUNGERE UNA FOTO
+        1. Copia il file nella cartella "media" (es. media/trattamento-05.jpg).
+        2. Copia uno dei blocchi <li class="treatment-card"> qui sotto,
+           incollalo in fondo alla lista e cambia: src, alt, categoria, titolo, descrizione.
+      -->
+      <ul class="treatments-gallery">
+
+        <li class="treatment-card reveal">
+          <button class="treatment-card__media" type="button" aria-label="Ingrandisci la foto: Visita podologica">
+            <img src="media/trattamento-01.jpg" alt="Il Dott. Cotrone durante una visita podologica nello studio" width="800" height="600" loading="lazy" decoding="async">
+            <span class="treatment-card__zoom" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </button>
+          <div class="treatment-card__body">
+            <span class="treatment-card__category">Visita</span>
+            <h3 class="treatment-card__title">boh</h3>
+            <p class="treatment-card__text">Il controllo generale con cui si valuta lo stato di salute del piede: appoggio, cute e unghie.</p>
+          </div>
+        </li>
+
+        <li class="treatment-card reveal">
+          <button class="treatment-card__media" type="button" aria-label="Ingrandisci la foto: Plantari su misura">
+            <img src="media/trattamento-02.jpg" alt="Studio dell'appoggio del piede per la realizzazione di plantari su misura" width="800" height="600" loading="lazy" decoding="async">
+            <span class="treatment-card__zoom" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </button>
+          <div class="treatment-card__body">
+            <span class="treatment-card__category">Plantari</span>
+            <h3 class="treatment-card__title">Plantari su misura</h3>
+            <p class="treatment-card__text">Studio della postura e dell'appoggio, con realizzazione di plantari personalizzati e controlli periodici.</p>
+          </div>
+        </li>
+
+        <li class="treatment-card reveal">
+          <button class="treatment-card__media" type="button" aria-label="Ingrandisci la foto: Unghia incarnita">
+            <img src="media/trattamento-03.jpg" alt="Trattamento di un'unghia incarnita eseguito in studio" width="800" height="600" loading="lazy" decoding="async">
+            <span class="treatment-card__zoom" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </button>
+          <div class="treatment-card__body">
+            <span class="treatment-card__category">Unghie</span>
+            <h3 class="treatment-card__title">Unghia incarnita</h3>
+            <p class="treatment-card__text">Trattamento delle onicocriptosi, per alleviare il dolore e prevenire infiammazioni ricorrenti.</p>
+          </div>
+        </li>
+
+        <li class="treatment-card reveal">
+          <button class="treatment-card__media" type="button" aria-label="Ingrandisci la foto: Callosità e ipercheratosi">
+            <img src="media/trattamento-04.jpg" alt="Rimozione di calli e duroni dal piede di un paziente" width="800" height="600" loading="lazy" decoding="async">
+            <span class="treatment-card__zoom" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </button>
+          <div class="treatment-card__body">
+            <span class="treatment-card__category">Cute</span>
+            <h3 class="treatment-card__title">Callosità e ipercheratosi</h3>
+            <p class="treatment-card__text">Rimozione di calli e duroni, spesso legati a calzature o a un appoggio non corretto.</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <p class="treatments-note">Elenco indicativo, non esaustivo. Per conoscere i trattamenti effettivamente disponibili e le relative modalità, contatta direttamente lo studio.</p>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section>
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Prenota la tua visita</h2>
+          <p>Per fissare un appuntamento o avere informazioni, il modo più diretto è chiamare lo studio.</p>
+        </div>
+        <a class="btn btn-primary" href="tel:0689526512">Chiama 06 8952 6512</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== LIGHTBOX ===== -->
+<dialog class="treatment-lightbox" id="treatmentLightbox" aria-label="Foto ingrandita del trattamento">
+  <div class="treatment-lightbox__inner">
+    <figure class="treatment-lightbox__figure">
+      <img class="treatment-lightbox__img" src="" alt="">
+      <figcaption class="treatment-lightbox__caption">
+        <div class="treatment-lightbox__title"></div>
+        <p class="treatment-lightbox__text"></p>
+      </figcaption>
+    </figure>
+  </div>
+  <button class="treatment-lightbox__btn treatment-lightbox__close" type="button" aria-label="Chiudi e torna alla galleria">✕</button>
+  <button class="treatment-lightbox__btn treatment-lightbox__prev" type="button" aria-label="Foto precedente">←</button>
+  <button class="treatment-lightbox__btn treatment-lightbox__next" type="button" aria-label="Foto successiva">→</button>
+</dialog>
+
+<!-- ===== FOOTER (identico a index.html) ===== -->
+<footer>
+  <div class="wrap footer-grid">
+    <span>Studio Podologico Cotrone — Viale Europa, 98, Roma</span>
+    <span>Sito informativo basato su dati pubblici; alcuni contenuti sono placeholder da personalizzare.</span>
+  </div>
+</footer>
+
+<div class="mobile-callbar">
+  <a class="btn btn-primary" href="tel:0689526512">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Chiama ora — 06 8952 6512
+  </a>
+</div>
+
+<script src="trattamenti.js"></script>
+</body>
+</html>
