@@ -207,6 +207,7 @@
   details[open] .acc-icon::after{transform:translate(-50%,-50%) rotate(90deg); opacity:0;}
   .acc-body{padding:0 4px 28px 44px; max-width:60ch; color:var(--grigio-testo); font-size:0.97rem;}
   .acc-note{max-width:820px; margin-top:26px; font-size:0.85rem; color:var(--grigio-testo);}
+  .acc-cta{ margin-top: 15px;}
 
   /* ---------------- Recensioni ---------------- */
   .rev-top{display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:24px; margin-bottom:44px;}
